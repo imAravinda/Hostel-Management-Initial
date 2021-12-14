@@ -18,13 +18,7 @@ const Facilities = () => {
         position: relative;
         left: 0;
         display: inline;
-    `
-    const HR = styled.h1`
-        width:100px;
-        height:3px;
-        background: #49483E;
-        position:relative;
-        margin-left:44%
+        border-bottom: 3px solid #49483E;
     `
     const MainSubSec = styled.div`
         display: flex;
@@ -77,7 +71,6 @@ const Facilities = () => {
         <Div>
             <Sec>
                 <H1>Hostel Facilities</H1>
-                <HR />
             </Sec>
             <Sec>
                 <P1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores quam libero consectetur eum incidunt esse, tempora fugit architecto obcaecati hic temporibus voluptates blanditiis ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, vitae suscipit. Provident, natus similique. Explicabo nam quia hic doloremque incidunt atque ab suscipit aspernatur fuga dicta modi sequi placeat, sunt facere consequatur corporis, harum sed esse odio ipsum? Ab nesciunt ad, similique explicabo voluptate alias.</P1>

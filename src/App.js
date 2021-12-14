@@ -1,6 +1,5 @@
 import './App.css';
 import Home from './Pages/Home';
-import { createGlobalStyle } from 'styled-components';
 import Navbar from './Components/NavBar/NavBar';
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 import content from './Data/Content';

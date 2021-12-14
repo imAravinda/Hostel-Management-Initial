@@ -4,21 +4,19 @@ import {
   StructureDes,
   StructureImgContainer,
   StructureDesPara,
-  StructureDesVision,
-  StructureDesMission,
   StructureDesVisionDes,
   StructureDesMissionDes,
-  StructureRule
+  StructureRule,
 } from "./RulesElements";
 
 
 const Structure = () => {
   return (
     <StructureItems>
-      <StructureDes>
       <StructureRule>
         Rules & Regulations
-        </StructureRule>
+      </StructureRule>
+      <StructureDes>
         <StructureDesPara>
           The University of Ruhuna operates under the provisions of the
           Universities Act No. 16 of 1978 and the Universities (Amendment) Act
@@ -27,19 +25,17 @@ const Structure = () => {
           and monitor the implementation of such decisions in the overall
           management
         </StructureDesPara>
-        <StructureDesVision></StructureDesVision>
         <StructureDesVisionDes>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore
           ad ipsam in fugiat odio reiciendis quod temporibus earum facere!
         </StructureDesVisionDes>
-        <StructureDesMission></StructureDesMission>
         <StructureDesMissionDes>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
           molestiae magnam laboriosam aut officiis sed impedit excepturi
           voluptatum 
         </StructureDesMissionDes>
         <StructureImgContainer>
-      <button type="submit" className="submit">
+          <button type="submit" className="submit">
                  --See More--
               </button>
       </StructureImgContainer>
