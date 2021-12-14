@@ -4,6 +4,7 @@ import Navbar from './Components/NavBar/NavBar';
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
 import content from './Data/Content';
 import Footer from './Components/Footer/Footer';
+import ScrollToTop from './Hooks/ScrollToTop';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="App">
       {/* <GlobalStyle/> */}
       <Navbar/>
+      <ScrollToTop/>
       {/* <ScrollToTop/>  */}
           <Switch>
             <Route exact path="/">

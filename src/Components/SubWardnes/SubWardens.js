@@ -1,6 +1,8 @@
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/lib/styles.css';
 import 'react-owl-carousel2/src/owl.theme.default.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import img1 from "./../../images/person1.jpeg";
 import img2 from "./../../images/person2.jpg";
 import img3 from "./../../images/person3.jpg"
@@ -67,6 +69,24 @@ const SubWardens = () => {
         font-weight: 700;
         margin-left: 10px;
     `
+    const Sec1 = styled.div`
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    `
+    const Icon = styled.div`
+        &{
+        font-size: 30px;
+        padding: 10px;
+        cursor: pointer;
+        }
+        &:active{
+            transform: scale(0.8);
+        }
+    `
+    const SubSec = styled.div`
+        margin: 10% 0;
+    `
     return ( 
         <Des>
             <Sec>
@@ -78,73 +98,186 @@ const SubWardens = () => {
                     <div>
                         <Img src={img1} alt="" />
                     </div>
-                    <div >
-                        <H3>Miss. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ </H3>
-                        <P>Contact No   :</P>
-                        <P>Email        :</P>
-                    </div>
+                    <SubSec>
+                        <div>
+                            <H3>Miss. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
+                            <P>Contact No   :</P>
+                            <P>Email        :</P>
+                        </div>
+                        <Sec1>
+                            <Icon>
+                                <FontAwesomeIcon icon={faFacebook}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faTwitter}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faLinkedin}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faInstagram}/>
+                            </Icon>
+                        </Sec1>
+                    </SubSec>
                 </Slider>
                 <Slider >
                     <div>
                         <Img src={img2} alt="" />
                     </div>
                     
-                    <div >
-                        <H3>Miss. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
-                        <P>Contact No   :</P>
-                        <P>Email        :</P>
-                    </div>    
+                    <SubSec>
+                        <div>
+                            <H3>Miss. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
+                            <P>Contact No   :</P>
+                            <P>Email        :</P>
+                        </div>
+                        <Sec1>
+                            <Icon>
+                                <FontAwesomeIcon icon={faFacebook}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faTwitter}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faLinkedin}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faInstagram}/>
+                            </Icon>
+                        </Sec1>
+                    </SubSec>  
                 </Slider>
                 <Slider className="slider">
                     <div>
                         <Img src={img3} alt="" />
                     </div>
 
-                    <div>
-                        <H3>Mr. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
-                        <P>Contact No   :</P>
-                        <P>Email        :</P>
-                    </div>    
+                    <SubSec>
+                        <div>
+                            <H3>Mr. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
+                            <P>Contact No   :</P>
+                            <P>Email        :</P>
+                        </div>
+                        <Sec1>
+                            <Icon>
+                                <FontAwesomeIcon icon={faFacebook}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faTwitter}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faLinkedin}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faInstagram}/>
+                            </Icon>
+                        </Sec1>
+                    </SubSec>
                 </Slider>
                 <Slider className="slider">
                     <div>
                         <Img src={img4} alt="" />
                     </div>
-                    <div >
-                        <H3>Miss. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
-                        <P>Contact No   :</P>
-                        <P>Email        :</P>
-                    </div>
+
+                    <SubSec>
+                        <div>
+                            <H3>Miss. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
+                            <P>Contact No   :</P>
+                            <P>Email        :</P>
+                        </div>
+                        <Sec1>
+                            <Icon>
+                                <FontAwesomeIcon icon={faFacebook}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faTwitter}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faLinkedin}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faInstagram}/>
+                            </Icon>
+                        </Sec1>
+                    </SubSec>
                 </Slider>
                 <Slider className="slider">
                     <div>
                         <Img src={img5} alt="" />
                     </div>
-                    <div>
-                        <H3>Mr. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
-                        <P>Contact No   :</P>
-                        <P>Email        :</P>
-                    </div>
+                    <SubSec>
+                        <div>
+                            <H3>Mr. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
+                            <P>Contact No   :</P>
+                            <P>Email        :</P>
+                        </div>
+                        <Sec1>
+                            <Icon>
+                                <FontAwesomeIcon icon={faFacebook}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faTwitter}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faLinkedin}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faInstagram}/>
+                            </Icon>
+                        </Sec1>
+                    </SubSec>
                 </Slider>
                 <Slider className="slider">
                     <div>
                         <Img src={img6} alt="" />
                     </div>
-                    <div >
-                        <H3>Miss. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
-                        <P>Contact No   :</P>
-                        <P>Email        :</P>
-                    </div>
+                    <SubSec>
+                        <div >
+                            <H3>Miss. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
+                            <P>Contact No   :</P>
+                            <P>Email        :</P>
+                        </div>
+                        <Sec1>
+                            <Icon>
+                                <FontAwesomeIcon icon={faFacebook}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faTwitter}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faLinkedin}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faInstagram}/>
+                            </Icon>
+                        </Sec1>
+                    </SubSec>
                 </Slider>
                 <Slider className="slider">
                     <div>
                         <Img src={img7} alt="" />
                     </div>
-                    <div>
-                        <H3>Miss. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
-                        <P>Contact No   :</P>
-                        <P>Email        :</P>
-                    </div>
+                    <SubSec>
+                        <div>
+                            <H3>Miss. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</H3>
+                            <P>Contact No   :</P>
+                            <P>Email        :</P>
+                        </div>
+                        <Sec1>
+                            <Icon>
+                                <FontAwesomeIcon icon={faFacebook}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faTwitter}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faLinkedin}/>
+                            </Icon>
+                            <Icon>
+                                <FontAwesomeIcon icon={faInstagram}/>
+                            </Icon>
+                        </Sec1>
+                    </SubSec>
                 </Slider>
             </OwlCarousel>
             </Sec>
