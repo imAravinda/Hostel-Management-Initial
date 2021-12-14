@@ -1,0 +1,115 @@
+import styled from "styled-components";
+
+const Facilities = () => {
+    const Div = styled.div`
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 3% 0;
+    `
+    const H1 = styled.h1`
+        text-align: center;
+        font-size: 40px;
+        color: #339BFF;
+        letter-spacing:8px;
+        font-weight: bold;
+        position: relative;
+        left: 0;
+        display: inline;
+    `
+    const HR = styled.h1`
+        width:100px;
+        height:3px;
+        background: #49483E;
+        position:relative;
+        margin-left:44%
+    `
+    const MainSubSec = styled.div`
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    `
+    const Sec = styled.div`
+        flex-basis: 100%;
+        margin: 20px 10px;
+        width: 100%;
+    `
+    const SubSec = styled.div`
+        margin: 15px;
+    `
+    const Icon = styled.div`
+        font-size: 80px;
+        margin: 10px 10px 45px 10px;
+        color: #FFA000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    `
+    const H2 = styled.h2`
+        margin: 10px 10px 20px 10px;
+        font-size:50px;
+        font-weight:400;
+    `
+    const P = styled.p`
+        font-size: 30px;
+        text-align: center;
+        letter-spacing:6px;
+        color:#484747;
+        margin-top:20px;
+    `
+    const P1 = styled.p`
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    left:10%
+    `
+    const HR1 = styled.h1`
+        width:80%;
+        height:3px;
+        background: #49483E;
+        position:relative;
+        //margin-left:44%
+    `
+    return ( 
+        <Div>
+            <Sec>
+                <H1>Hostel Facilities</H1>
+                <HR />
+            </Sec>
+            <Sec>
+                <P1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolores quam libero consectetur eum incidunt esse, tempora fugit architecto obcaecati hic temporibus voluptates blanditiis ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, vitae suscipit. Provident, natus similique. Explicabo nam quia hic doloremque incidunt atque ab suscipit aspernatur fuga dicta modi sequi placeat, sunt facere consequatur corporis, harum sed esse odio ipsum? Ab nesciunt ad, similique explicabo voluptate alias.</P1>
+            </Sec>
+            <Sec>
+                <MainSubSec>
+                <SubSec>
+                    <Icon>
+                       
+                    </Icon>
+                    <H2>10</H2>
+                    <P>Faculties</P>
+                </SubSec>
+                <SubSec>
+                    <Icon>
+                        
+                    </Icon>
+                    <H2>6547</H2>
+                    <P>Students</P>
+                </SubSec>
+                <SubSec>
+                    <Icon>
+                        
+                    </Icon>
+                    <H2>15</H2>
+                    <P>Sub-Wordens</P>
+                </SubSec>
+                </MainSubSec>
+            </Sec>
+            <HR1 /> 
+        </Div>
+     );
+}
+ 
+export default Facilities;
