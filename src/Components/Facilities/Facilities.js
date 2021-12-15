@@ -64,7 +64,7 @@ const Facilities = () => {
     const[ScrollToTop,setScrollToTop] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll",()=>{
-            if(window.pageYOffset > 500){
+            if(window.pageYOffset >= 400){
                 setScrollToTop(true);
             }
             else{

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import img from "./../../images/unilogo.png";
-const Navbar = () => {
+import { Link } from "react-router-dom";
+const Navbar = (scrollToTop) => {
     const Navbar=styled.div`
         display: block;
         margin: 0;
@@ -62,12 +63,14 @@ const Navbar = () => {
         position: absolute;
         top: 80%;
         margin-top: 5px;
-        left: 10%;
+        display: flex;
+        justify-content: center;
         background: #FFF;
         z-index: -1;
         transition: 0.5s;
     }
     `
+    
     return ( 
         <Navbar>
             <Nav>
@@ -78,11 +81,11 @@ const Navbar = () => {
                 
                <Links>
                     <Ul>
-                        <Li>Home<Span className="Ho"></Span></Li>
-                        <Li>Facilities<Span className="Ho"></Span></Li>
-                        <Li>Rules & Regulations<Span className="Ho"></Span></Li>
-                        <Li>Maintaince<Span className="Ho"></Span></Li>
-                        <Li>Contact Us<Span className="Ho"></Span></Li>
+                        <Li className="li" onClick={scrollToTop}><Link to ="/Home">Home<Span className="Ho"></Span></Link></Li>
+                        <Li className="li" onClick={scrollToTop}><Link to ="/">Facilities<Span className="Ho"></Span></Link></Li>
+                        <Li className="li" onClick={scrollToTop}><Link to ="/RulesandRegulation">Rules & Regulations<Span className="Ho"></Span></Link></Li>
+                        <Li className="li" onClick={scrollToTop}><Link to ="/">Maintaince<Span className="Ho"></Span></Link></Li>
+                        <Li className="li" onClick={scrollToTop}><Link to ="/">Contact Us<Span className="Ho"></Span></Link></Li>
                     </Ul>
                 </Links>
             </Nav>
