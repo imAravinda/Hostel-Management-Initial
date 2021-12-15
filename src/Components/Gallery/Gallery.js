@@ -23,26 +23,26 @@ const Gallary = () => {
         <GallaryHeader>Gallery</GallaryHeader>
       <GallaryRows>
         <GallaryFirstRow>
-          <GallatyImgContainer>
+          <GallatyImgContainer data-aos="flip-right">
             <GallaryImg src={img1} />
           </GallatyImgContainer>
-          <GallatyImgContainer>
+          <GallatyImgContainer data-aos="flip-right">
             <GallaryImg src={img2} />
           </GallatyImgContainer>
-          <GallatyImgContainer>
+          <GallatyImgContainer data-aos="flip-right">
             <GallaryImg src={img3} />
           </GallatyImgContainer>
          
         </GallaryFirstRow>
 
         <GallaryFirstRow>
-          <GallatyImgContainer>
+          <GallatyImgContainer data-aos="flip-right">
             <GallaryImg src={img5} />
           </GallatyImgContainer>
-          <GallatyImgContainer>
+          <GallatyImgContainer data-aos="flip-right">
             <GallaryImg src={img6} />
           </GallatyImgContainer>
-          <GallatyImgContainer>
+          <GallatyImgContainer data-aos="flip-right">
             <GallaryImg src={img7} />
           </GallatyImgContainer>
           

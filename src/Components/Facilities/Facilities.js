@@ -1,5 +1,6 @@
 import styled from "styled-components";
-
+import CountUp from 'react-countup';
+import { useState,useEffect } from "react";
 const Facilities = () => {
     const Div = styled.div`
         display: flex;
@@ -33,14 +34,7 @@ const Facilities = () => {
     const SubSec = styled.div`
         margin: 15px;
     `
-    const Icon = styled.div`
-        font-size: 80px;
-        margin: 10px 10px 45px 10px;
-        color: #FFA000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    `
+    
     const H2 = styled.h2`
         margin: 10px 10px 20px 10px;
         font-size:50px;
@@ -67,6 +61,17 @@ const Facilities = () => {
         position:relative;
         //margin-left:44%
     `
+    const[ScrollToTop,setScrollToTop] = useState(false);
+    useEffect(() => {
+        window.addEventListener("scroll",()=>{
+            if(window.pageYOffset > 500){
+                setScrollToTop(true);
+            }
+            else{
+                setScrollToTop(false)
+            }
+        })
+    }, []);
     return ( 
         <Div>
             <Sec>
@@ -78,24 +83,15 @@ const Facilities = () => {
             <Sec>
                 <MainSubSec>
                 <SubSec>
-                    <Icon>
-                       
-                    </Icon>
-                    <H2>10</H2>
+                    <H2>{ScrollToTop && <CountUp end={10} duration={1}/> }</H2>
                     <P>Faculties</P>
                 </SubSec>
                 <SubSec>
-                    <Icon>
-                        
-                    </Icon>
-                    <H2>6547</H2>
+                    <H2>{ScrollToTop && <CountUp end={6547} duration={1}/> }</H2>
                     <P>Students</P>
                 </SubSec>
                 <SubSec>
-                    <Icon>
-                        
-                    </Icon>
-                    <H2>15</H2>
+                    <H2>{ScrollToTop && <CountUp end={15} duration={1}/> }</H2>
                     <P>Sub-Wordens</P>
                 </SubSec>
                 </MainSubSec>

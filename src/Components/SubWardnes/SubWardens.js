@@ -94,7 +94,7 @@ const SubWardens = () => {
             </Sec>
             <Sec>
             <OwlCarousel options={options} id="carousel">
-                <Slider >
+                <Slider data-aos="zoom-in">
                     <div>
                         <Img src={img1} alt="" />
                     </div>
@@ -104,7 +104,7 @@ const SubWardens = () => {
                             <P>Contact No   :</P>
                             <P>Email        :</P>
                         </div>
-                        <Sec1>
+                        <Sec1 >
                             <Icon>
                                 <FontAwesomeIcon icon={faFacebook}/>
                             </Icon>
@@ -120,7 +120,7 @@ const SubWardens = () => {
                         </Sec1>
                     </SubSec>
                 </Slider>
-                <Slider >
+                <Slider data-aos="zoom-in">
                     <div>
                         <Img src={img2} alt="" />
                     </div>
@@ -147,7 +147,7 @@ const SubWardens = () => {
                         </Sec1>
                     </SubSec>  
                 </Slider>
-                <Slider className="slider">
+                <Slider data-aos="zoom-in">
                     <div>
                         <Img src={img3} alt="" />
                     </div>
@@ -174,7 +174,7 @@ const SubWardens = () => {
                         </Sec1>
                     </SubSec>
                 </Slider>
-                <Slider className="slider">
+                <Slider data-aos="zoom-in">
                     <div>
                         <Img src={img4} alt="" />
                     </div>
@@ -201,7 +201,7 @@ const SubWardens = () => {
                         </Sec1>
                     </SubSec>
                 </Slider>
-                <Slider className="slider">
+                <Slider data-aos="zoom-in">
                     <div>
                         <Img src={img5} alt="" />
                     </div>
@@ -227,7 +227,7 @@ const SubWardens = () => {
                         </Sec1>
                     </SubSec>
                 </Slider>
-                <Slider className="slider">
+                <Slider data-aos="zoom-in">
                     <div>
                         <Img src={img6} alt="" />
                     </div>
@@ -253,7 +253,7 @@ const SubWardens = () => {
                         </Sec1>
                     </SubSec>
                 </Slider>
-                <Slider className="slider">
+                <Slider data-aos="zoom-in">
                     <div>
                         <Img src={img7} alt="" />
                     </div>
