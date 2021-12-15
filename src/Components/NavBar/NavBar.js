@@ -82,10 +82,10 @@ const Navbar = (scrollToTop) => {
                <Links>
                     <Ul>
                         <Li className="li" onClick={scrollToTop}><Link to ="/Home">Home<Span className="Ho"></Span></Link></Li>
-                        <Li className="li" onClick={scrollToTop}><Link to ="/">Facilities<Span className="Ho"></Span></Link></Li>
+                        <Li className="li" onClick={scrollToTop}><Link >Facilities<Span className="Ho"></Span></Link></Li>
                         <Li className="li" onClick={scrollToTop}><Link to ="/RulesandRegulation">Rules & Regulations<Span className="Ho"></Span></Link></Li>
-                        <Li className="li" onClick={scrollToTop}><Link to ="/">Maintaince<Span className="Ho"></Span></Link></Li>
-                        <Li className="li" onClick={scrollToTop}><Link to ="/">Contact Us<Span className="Ho"></Span></Link></Li>
+                        <Li className="li" onClick={scrollToTop}><Link >Maintaince<Span className="Ho"></Span></Link></Li>
+                        <Li className="li" onClick={scrollToTop}><Link >Contact Us<Span className="Ho"></Span></Link></Li>
                     </Ul>
                 </Links>
             </Nav>

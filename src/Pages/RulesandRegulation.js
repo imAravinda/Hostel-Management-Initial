@@ -1,8 +1,12 @@
 import RulesRegulation from "../Components/Rules/Rules&Regulation";
-
-const RulesandRegulation = () => {
+import Cover from "../Components/Cover/Cover";
+const RulesandRegulation = (props) => {
     return ( 
-        <RulesRegulation/>
+        <div className="container">
+            <Cover Cover1text= {props.Covertext} />
+            <RulesRegulation/>
+        </div>
+        
      );
 }
  
