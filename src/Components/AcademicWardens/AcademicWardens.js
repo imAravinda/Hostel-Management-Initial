@@ -8,7 +8,6 @@ const AcademicWardens = () => {
         display: block;
     `
     const Sec = styled.div`
-        padding: 0 5px;
         width: 100%;
         margin-bottom : 5%;
         display: flex;
@@ -16,7 +15,7 @@ const AcademicWardens = () => {
 
     `
     const Slider=styled.div`
-        height: 450px;
+        height: 400px;
         width: 300px;
         z-index:0;
         border-radius: 10px;
