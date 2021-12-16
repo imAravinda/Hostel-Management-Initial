@@ -47,7 +47,19 @@ export const GallaryImg =styled.img`
         margin: 10px 40px;
         border-radius:40px;
         transition: 0.3s;
+        position: relative;
     }
+    &::before{
+            position: absolute;
+            height: 100%;
+            z-index:2;
+            content: '';
+            top: 0%;
+            right: 0%;
+            bottom: 0%;
+            left: 0%;
+            background-color: #339BFF;
+        }
     &:hover{
         transform: translateY(-10px);
         cursor: pointer;
