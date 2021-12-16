@@ -17,12 +17,10 @@ function App() {
     
       <Router>
       <div className="App">
-      {/* <GlobalStyle/> */}
       <Navbar/>
       <ScrollToTop/>
-      {/* <ScrollToTop/>  */}
           <Switch>
-            <Route exact path="/Home">
+            <Route exact path="/">
               <div>
                 <Home Covertext={content[0]}/>
               </div>
@@ -34,7 +32,6 @@ function App() {
             </Route>
           </Switch>
           <Footer />
-          {/* <Footer/> */}
       </div>
     </Router>
     

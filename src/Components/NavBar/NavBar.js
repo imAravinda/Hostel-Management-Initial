@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import img from "./../../images/unilogo.png";
 import { Link } from "react-router-dom";
-const Navbar = (scrollToTop) => {
+// import { useState,useEffect } from "react";
+const Navbar = () => {
     const Navbar=styled.div`
         display: block;
         margin: 0;
@@ -71,6 +72,14 @@ const Navbar = (scrollToTop) => {
     }
     `
     
+    const scrollToTop = ()=>{
+        if(window.pageYOffset > 200){
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    }
     return ( 
         <Navbar>
             <Nav>
@@ -81,7 +90,7 @@ const Navbar = (scrollToTop) => {
                 
                <Links>
                     <Ul>
-                        <Li className="li" onClick={scrollToTop}><Link to ="/Home">Home<Span className="Ho"></Span></Link></Li>
+                        <Li className="li" onClick={scrollToTop}><Link to ="/">Home<Span className="Ho"></Span></Link></Li>
                         <Li className="li" onClick={scrollToTop}><Link >Facilities<Span className="Ho"></Span></Link></Li>
                         <Li className="li" onClick={scrollToTop}><Link to ="/RulesandRegulation">Rules & Regulations<Span className="Ho"></Span></Link></Li>
                         <Li className="li" onClick={scrollToTop}><Link >Maintaince<Span className="Ho"></Span></Link></Li>
