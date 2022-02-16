@@ -8,7 +8,6 @@ import {
             Nav,
             Links,
             Ul,
-            LinksH1,
             Li,
             Logo,
             Span,
@@ -41,10 +40,10 @@ const Navbar = () => {
                 <Nav>
                         <Ul>
                             <Li className="li" onClick={() => {scrollToTop();Invisible();}}><Link to ="/">Home<Span className="Ho"></Span></Link></Li>
-                            <Li className="li" onClick={() => {scrollToTop();Invisible();}}><Link >Facilities<Span className="Ho"></Span></Link></Li>
+                            <Li className="li" onClick={() => {scrollToTop();Invisible();}}><Link to="">Facilities<Span className="Ho"></Span></Link></Li>
                             <Li className="li" onClick={() => {scrollToTop();Invisible();}}><Link to ="/RulesandRegulation">Rules & Regulations<Span className="Ho"></Span></Link></Li>
-                            <Li className="li" onClick={() => {scrollToTop();Invisible();}}><Link >Maintaince<Span className="Ho"></Span></Link></Li>
-                            <Li className="li" onClick={() => {scrollToTop();Invisible()}}><Link >Wardens & SubWardens<Span className="Ho"></Span></Link></Li>
+                            <Li className="li" onClick={() => {scrollToTop();Invisible();}}><Link to="">Maintaince<Span className="Ho"></Span></Link></Li>
+                            <Li className="li" onClick={() => {scrollToTop();Invisible()}}><Link to="">Wardens & SubWardens<Span className="Ho"></Span></Link></Li>
                         </Ul>
                 </Nav> 
                 : false

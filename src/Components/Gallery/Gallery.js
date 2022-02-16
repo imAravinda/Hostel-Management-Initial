@@ -2,7 +2,7 @@ import React from "react";
 import {
           Container,
           Row,
-          Column,
+          Header,
           Image
 } from "./GalleryElements";
 
@@ -16,23 +16,17 @@ import img7 from "./../../images/image014.jpg";
 const Gallery = () => {
   return (
     <Container>
-      {/* <Header>Gallery</Header> */}
+      <Header data-aos="fade-up">Gallery</Header>
         <Row>
-        <Column>
-          <Image src = {img1}/>
-          <Image src = {img2}/>
-          <Image src = {img3}/>
-        </Column>
-        <Column>
-          <Image src = {img5}/>
-          <Image src = {img7}/>
-          <Image src = {img6}/>
-        </Column>
-        <Column>
-          <Image src = {img6}/>
-          <Image src = {img5}/>
-          <Image src = {img7}/>
-        </Column>
+          <Image src = {img1} data-aos="zoom-in"/>
+          <Image src = {img2} data-aos="zoom-in"/>
+          <Image src = {img3} data-aos="zoom-in"/>
+          <Image src = {img5} data-aos="zoom-in"/>
+          <Image src = {img7} data-aos="zoom-in"/>
+          <Image src = {img6} data-aos="zoom-in"/>
+          <Image src = {img6} data-aos="zoom-in"/>
+          <Image src = {img5} data-aos="zoom-in"/>
+          <Image src = {img7} data-aos="zoom-in"/>
       </Row>
     </Container> 
    );

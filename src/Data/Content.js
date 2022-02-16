@@ -18,3 +18,14 @@ export const images = [
         photo : require("../images/img2.jpg").default
     }
 ];
+export const eventImages = [
+    {
+        photo : require("../images/adi-goldstein-Hli3R6LKibo-unsplash.jpg").default
+    },
+    {
+        photo : require("../images/bady-abbas-BptxJ3pB-0s-unsplash.jpg").default
+    },
+    {
+        photo : require("../images/samuel-pereira-uf2nnANWa8Q-unsplash.jpg").default
+    }
+];

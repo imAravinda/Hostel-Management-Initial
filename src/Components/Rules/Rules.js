@@ -22,12 +22,12 @@ const Rules = () => {
   return (
     <Container>
       <RulesSection>
-        <Header >
+        <Header data-aos="fade-up" >
           Rules & Regulations
         </Header>
       </RulesSection>
       <RulesSection>
-        <RulesDescription >
+        <RulesDescription data-aos="fade-up" >
           The University of Ruhuna operates under the provisions of the
           Universities Act No. 16 of 1978 and the Universities (Amendment) Act
           No. 7 of 1985. Accordingly, the university has a Chancellor, a Vice
@@ -35,18 +35,18 @@ const Rules = () => {
           and monitor the implementation of such decisions in the overall
           management
         </RulesDescription>
-        <Rule >
+        <Rule data-aos="fade-right">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore
           ad ipsam in fugiat odio reiciendis quod temporibus earum facere!
         </Rule>
-        <Rule >
+        <Rule data-aos="fade-right">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
           molestiae magnam laboriosam aut officiis sed impedit excepturi
           voluptatum 
         </Rule>
       </RulesSection>
       <RulesSection>
-        <Button onClick={ScrollToTop}><Link to = "/RulesandRegulation" className="lin">See More</Link></Button>
+        <Button onClick={ScrollToTop} data-aos="fade-right"><Link to = "/RulesandRegulation" className="lin">See More</Link></Button>
       </RulesSection>
     </Container>
   );

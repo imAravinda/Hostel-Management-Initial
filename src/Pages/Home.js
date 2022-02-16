@@ -14,9 +14,9 @@ const Home = (props) => {
          <Cover Cover1text= {props.Covertext} CoverImage1 = {props.CoverImage}/>
          <LoginButton/>
          <Facilities />
-         <News />
-         <Gallery />
          <Rules/>
+         <Gallery />
+         <News />
          <Events/>
         </div>
     );

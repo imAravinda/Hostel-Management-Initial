@@ -56,7 +56,7 @@ export const Ul=styled.ul`
 export const Li=styled.li`
     &{
         list-style: none;
-        margin: 30px 10px;
+        margin: 40px 10px;
         text-align: right;
     }
     &:hover .Ho{
@@ -74,9 +74,9 @@ export const Logo = styled.img`
     `
 export const Span = styled.span`
         width: 0%;
-        height: 2.5px;
-        top: 80%;
-        margin-top: 5px;
+        height: 2px;
+        top: 100%;
+        margin-top: 10px;
         display: flex;
         justify-content: center;
         background: #FFF;

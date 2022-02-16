@@ -67,43 +67,44 @@ import styled from "styled-components";
 
 // `
 export const Container = styled.div`
-    position: relative;
-    top: -150px;
     padding: 0 5%;
     background-color: #fff;
     z-index: 1;
+    margin: 2% 0 8% 0;
 `
-// const Header = styled.h1`
-//   text-align: center;
-//   font-size: 40px;
-//   color: #0e0900;
-//   font-variant: small-caps;
-//   font-weight: bold;
-//   position: relative;
-//   left: 0;
-//   margin-bottom: 40px;
-//   border-bottom: 3px solid #FFA000;
-//   display: inline;
-// `
-export const Row = styled.div`
-  display: -ms-flexbox; 
-  display: flex;
-  -ms-flex-wrap: wrap; 
-  flex-wrap: wrap;
+export const Header = styled.h1`
+  text-align: center;
+  font-size: 40px;
+  color: #49483E;
+  letter-spacing:8px;
+  font-weight: bold;
+  position: relative;
+  left: 0;
+  display: inline;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+`
+export const Row = styled.div` 
   padding: 0 4px;
   margin-top: 2%;
+   -webkit-column-count:5; /* split it into 5 columns */
+   -webkit-column-gap:20px; /* give it a 5px gap between columns */
+   -moz-column-count:5;
+   -moz-column-gap:20px;
+   column-count:5;
+   column-gap:20px;
 `
-export const Column = styled.div`
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 50%;
-  padding: 0 4px;
-`
+// export const Column = styled.div`
+//   -ms-flex: 25%; /* IE10 */
+//   flex: 25%;
+//   max-width: 50%;
+//   padding: 0 4px;
+// `
 export const Image = styled.img`
-  &{  margin-top: 8px;
-      vertical-align: middle;
-      width: 100%;
+  &{  margin: 8px;
       transition: 0.5s ease-out;
+      width: 100% !important;
+      height: 250px !important;
   }
   &:hover{
     cursor: pointer;
