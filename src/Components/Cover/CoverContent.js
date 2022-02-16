@@ -6,46 +6,50 @@ const CoverContent = (props) => {
         top: 20%;
         z-index: 2;
         display: flex;
-        justify-content: left;
-        margin-left:100px;
+        justify-content: center;
         flex-wrap: wrap;
+        margin: 0 5%;
     `
     const Divsec = styled.div`
-        flex-basis: 80%;
-        margin: 0 0px 20px 35px ;
+        flex-basis: 100%;
         
     `
     const H1 = styled.h1`
-        font-size: 45px;
+        font-size: 60px;
         color: #FFF;
-        text-align: left;
-        width: 800px;
-        letter-spacing:3px;
+        text-align: center;
+        width: 100%;
+        letter-spacing:10px;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 100;
     `
-    const HR = styled.hr`
-        width: 20%;
-        height: 3px;
-        background: #FFF;
-        border: none;
-        margin-bottom: 10px;
-        margin-left:0%;
-    `
+    // const HR = styled.hr`
+    //     width: 20%;
+    //     height: 3px;
+    //     background: #FFF;
+    //     border: none;
+    //     margin-bottom: 10px;
+    //     margin-left:0%;
+    // `
     const P = styled.p`
-        text-align:justify;
+        text-align:center;
         color: #FFF;
-        width:600px;
+        width:100%;
+        margin-top: 0;
+        margin-bottom: 5%;
+        font-family:"Nunito", sans-serif;
+        opacity: 1;
+        line-height: 150%;
     `
-
     return ( 
             <Sec data-aos="fade-right">
                 <Divsec>   
                     <H1>{props.text.header}</H1>
-                    <HR />
+                    {/* <HR /> */}
                 </Divsec>
                 <Divsec>
                     <P>{props.text.desc}</P>
                 </Divsec>
-                
             </Sec>
      );
 }

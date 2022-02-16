@@ -7,19 +7,24 @@ const Facilities = () => {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        margin: 3% 0;
+        height: 600px;
+        margin-top: 35%;
+        padding-top: 12%;
+        padding-bottom: 10%;
+        border-bottom-right-radius: 30%;
+        background-color: #fff;
     `
     const H1 = styled.h1`
         text-align: center;
         font-size: 40px;
-        color: #339BFF;
+        color: #49483E;
         letter-spacing:8px;
         font-weight: bold;
         position: relative;
         left: 0;
         display: inline;
-        border-bottom: 3px solid #49483E;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 100;
     `
     const MainSubSec = styled.div`
         display: flex;
@@ -28,7 +33,7 @@ const Facilities = () => {
     `
     const Sec = styled.div`
         flex-basis: 100%;
-        margin: 20px 10px;
+        margin:10px;
         width: 100%;
     `
     const SubSec = styled.div`
@@ -36,7 +41,7 @@ const Facilities = () => {
     `
     
     const H2 = styled.h2`
-        margin: 10px 10px 20px 10px;
+        margin: 0px 10px 20px 10px;
         font-size:50px;
         font-weight:400;
     `
@@ -45,21 +50,29 @@ const Facilities = () => {
         text-align: center;
         letter-spacing:6px;
         color:#484747;
-        margin-top:20px;
+        font-family: "Nunito", sans-serif;
+        opacity: 0.5;
     `
     const P1 = styled.p`
-    font-size: 18px;
-    text-align: center;
-    width: 80%;
-    position: relative;
-    left:10%
+        font-size: 17px;
+        text-align: center;
+        width: 80%;
+        position: relative;
+        left:10%;
+        font-family: "Nunito", sans-serif;
+        opacity: 0.5;
     `
-    const HR1 = styled.h1`
+    const HR1 = styled.hr`
         width:80%;
         height:3px;
         background: #49483E;
         position:relative;
         //margin-left:44%
+        top: -5%;
+    `
+    const Count = styled.div`
+        font-family:  "Nunito", sans-serif;
+        color: #49483E;
     `
     const[ScrollToTop,setScrollToTop] = useState(false);
     useEffect(() => {
@@ -83,15 +96,15 @@ const Facilities = () => {
             <Sec>
                 <MainSubSec>
                 <SubSec>
-                    <H2>{ScrollToTop && <CountUp end={10} duration={1}/> }</H2>
+                    <H2>{ScrollToTop && <Count><CountUp end={10} duration={1}/></Count> }</H2>
                     <P>Faculties</P>
                 </SubSec>
                 <SubSec>
-                    <H2>{ScrollToTop && <CountUp end={6547} duration={1}/> }</H2>
+                    <H2>{ScrollToTop && <Count><CountUp end={6547} duration={1}/> </Count>}</H2>
                     <P>Students</P>
                 </SubSec>
                 <SubSec>
-                    <H2>{ScrollToTop && <CountUp end={15} duration={1}/> }</H2>
+                    <H2>{ScrollToTop && <Count><CountUp end={15} duration={1}/></Count> }</H2>
                     <P>Sub-Wordens</P>
                 </SubSec>
                 </MainSubSec>

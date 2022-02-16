@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   color: #fff;
-  background:#1C62A7;
+  background:#339BFF;
   padding-bottom: 20px;
   padding-top: 20px;
+  z-index:0;
 `;
 export const Logo =styled.div`
     height: auto; 
@@ -136,12 +137,6 @@ export const Icon = styled.div`
             transform: scale(0.8);
         }
     `;
-export const HR = styled.hr`
-  width: 100%;
-  height: 2px;
-  background-color: #49483E5e;
-  border: none;
-`
 export const P = styled.p`
   text-align: center;
 `

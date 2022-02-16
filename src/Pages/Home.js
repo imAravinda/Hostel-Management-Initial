@@ -3,20 +3,21 @@ import Cover from '../Components/Cover/Cover';
 import Facilities from '../Components/Facilities/Facilities';
 import Gallery from '../Components/Gallery/Gallery';
 import News from '../Components/News/News';
-import SubWardens from '../Components/SubWardnes/SubWardens';
-import AcademicWardens from '../Components/AcademicWardens/AcademicWardens';
+import LoginButton from '../Components/Button/LoginButton';
+import Rules from '../Components/Rules/Rules';
+import Events from '../Components/Events/Events';
 
 
 const Home = (props) => {
     return (
         <div className="container">
-         <Cover Cover1text= {props.Covertext} />
+         <Cover Cover1text= {props.Covertext} CoverImage1 = {props.CoverImage}/>
+         <LoginButton/>
          <Facilities />
-         <Gallery />
          <News />
-         <AcademicWardens/>
-         <SubWardens/>
-         
+         <Gallery />
+         <Rules/>
+         <Events/>
         </div>
     );
 }

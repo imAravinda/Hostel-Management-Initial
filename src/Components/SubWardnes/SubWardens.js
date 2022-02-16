@@ -60,7 +60,7 @@ const SubWardens = () => {
         border-bottom: 3px solid #49483E;
         display: inline;
     `
-    const H3 = styled.h3`
+    const H4 = styled.h4`
         color: #000;
         margin: 10px;
         text-align: left;
@@ -69,7 +69,6 @@ const SubWardens = () => {
         font-size: 15px;
         color: #000;
         text-align: left;
-        font-weight: 700;
         margin-left: 10px;
     `
     const Sec1 = styled.div`
@@ -103,7 +102,7 @@ const SubWardens = () => {
                     </div>
                     <SubSec>
                         <div>
-                            <H3>Mrs. M. H. C. Priyadarshani</H3>
+                            <H4>Mrs. M. H. C. Priyadarshani</H4>
                             <P>Hostel : Wellamadama 01 Girls’ Hostel</P>
                             <P>Contact No : 0716721961</P>
                             <P>Email : </P>
@@ -131,7 +130,7 @@ const SubWardens = () => {
                     
                     <SubSec>
                         <div>
-                            <H3>Mrs. Shamini Karunarathne</H3>
+                            <H4>Mrs. Shamini Karunarathne</H4>
                             <P>Hostel : Wellamadama 02 Girls’ Hostel</P>
                             <P>Contact No   : 0718560738</P>
                             <P>Email        :</P>
@@ -159,7 +158,7 @@ const SubWardens = () => {
 
                     <SubSec>
                         <div>
-                            <H3>Mrs. Chamila Jayalal</H3>
+                            <H4>Mrs. Chamila Jayalal</H4>
                             <P>Hostel : Wellamadama 03 Girls’ Hostel</P>
                             <P>Contact No   : 0719364151</P>
                             <P>Email        :</P>
@@ -187,7 +186,7 @@ const SubWardens = () => {
 
                     <SubSec>
                         <div>
-                            <H3>Ms. A. P. Hemanthi</H3>
+                            <H4>Ms. A. P. Hemanthi</H4>
                             <P>Hostel : Eliyakanda New Girls’ Hostel</P>
                             <P>Contact No   : 0714469525</P>
                             <P>Email        :</P>
@@ -214,7 +213,7 @@ const SubWardens = () => {
                     </div>
                     <SubSec>
                         <div>
-                            <H3>Mrs. P Kumarasingha</H3>
+                            <H4>Mrs. P Kumarasingha</H4>
                             <P>Hostel : Eliyakanda Old Girls’ Hostel</P>
                             <P>Contact No   : 0702519055 / 0705170647</P>
                             <P>Email        :</P>
@@ -241,7 +240,7 @@ const SubWardens = () => {
                     </div>
                     <SubSec>
                         <div >
-                            <H3>Mrs. Nirmala Wijerathna</H3>
+                            <H4>Mrs. Nirmala Wijerathna</H4>
                             <P>Hostel : Pamburana 02 Girls’ Hostel</P>
                             <P>Contact No   : 0714994092</P>
                             <P>Email        :</P>
@@ -268,7 +267,7 @@ const SubWardens = () => {
                     </div>
                     <SubSec>
                         <div>
-                            <H3>Mr. Srinath Dissanayake</H3>
+                            <H4>Mr. Srinath Dissanayake</H4>
                             <P>Hostel : Eliyakanda New & Old Boys’ Hostel</P>
                             <P>Contact No   : 0718153801</P>
                             <P>Email        :</P>
@@ -295,7 +294,7 @@ const SubWardens = () => {
                     </div>
                     <SubSec>
                         <div>
-                            <H3>Mr. Chandana Samarawickrama</H3>
+                            <H4>Mr. Chandana Samarawickrama</H4>
                             <P>Hostel : Meddawatta Boys’ Hostel</P>
                             <P>Contact No   : 0760575698 / 0715549398</P>
                             <P>Email        :</P>
@@ -322,7 +321,7 @@ const SubWardens = () => {
                     </div>
                     <SubSec>
                         <div>
-                            <H3>Mr. Kularathna</H3>
+                            <H4>Mr. Kularathna</H4>
                             <P>Hostel : Walauwatta Bikkhu Hostel</P>
                             <P>Contact No   : 0718336898 / 0710396105</P>
                             <P>Email        :</P>

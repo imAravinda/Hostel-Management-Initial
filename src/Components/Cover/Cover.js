@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import image1 from "./../../images/img1.jpg";
-import image2 from "./../../images/img2.jpg";
-import OwlCarousel from 'react-owl-carousel2';
+// import image2 from "./../../images/img2.jpg";
+// import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/lib/styles.css';
 import 'react-owl-carousel2/src/owl.theme.default.css';
 //import img3 from "./Images/oleg-illarionov-q9q8bi0Aw7o-unsplash.jpg";
@@ -10,26 +9,21 @@ import 'react-owl-carousel2/src/owl.theme.default.css';
 
 import CoverContent from './CoverContent';
 const Cover = (props) => {
-    const options = {
-        items: 1,
-        rewind: true,
-        autoplay: true,
-        loop:true,
-        nav:false,
-    };
-    const Slider=styled.div`
-        width: 100%;
-        height: 100vh;
-        z-index: 2;
-    `
+    // const Slider=styled.div`
+    //     width: 100%;
+    //     height: 100vh;
+    //     z-index: 2;
+    // `
     const Before = styled.div`
         &{
             display: flex;
             flex-wrap: wrap;
             width: 100%;
             height: 100vh;
-            position: relative;
+            top: 0%;
+            margin-top: 0;
             z-index: 1;
+            position: absolute;
         }
         &::before{
             position: absolute;
@@ -40,26 +34,27 @@ const Cover = (props) => {
             right: 0%;
             bottom: 0%;
             left: 0%;
-            background-color: #4242425d;
+            background:linear-gradient(#339BFF,#4242425d);
+            opacity: 0.8;
+            border-bottom-right-radius: 30%;
         }
             @media(max-width : 1110px){
                 &{
                     height: 100vh;
                 }&::before{
                     height: 100%;
+
                 }
         }
         `
-        const IMG = styled.img`
+        const CoverImage = styled.img`
             width: 100%;
             height: 100%;
+            border-bottom-right-radius: 30%;
         `
     return ( 
         <Before>
-            <OwlCarousel options={options} >
-                <Slider><IMG src={image2} alt="" /></Slider>
-                <Slider><IMG src={image1} alt="" /></Slider>
-            </OwlCarousel>
+            <CoverImage src={props.CoverImage1.photo}/>
             <CoverContent text={props.Cover1text}/>
         </Before>
      );

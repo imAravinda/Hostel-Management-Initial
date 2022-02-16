@@ -3,7 +3,7 @@ import Cover from "../Components/Cover/Cover";
 const RulesandRegulation = (props) => {
     return ( 
         <div className="container">
-            <Cover Cover1text= {props.Covertext} />
+            <Cover Cover1text= {props.Covertext} CoverImage1 = {props.CoverImage}/>
             <RulesRegulation/>
         </div>
      );

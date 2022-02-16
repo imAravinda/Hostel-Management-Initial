@@ -1,13 +1,9 @@
 import React from "react";
-
 import {
-  GallaryContainer,
-  GallaryHeader,
-  GallaryRows,
-  GallaryFirstRow,
-  GallatyImgContainer,
-  GallaryImg,
-
+          Container,
+          Row,
+          Column,
+          Image
 } from "./GalleryElements";
 
 import img1 from "./../../images/image015.png";
@@ -17,39 +13,29 @@ import img5 from "./../../images/image010.jpg";
 import img6 from "./../../images/image012.jpg";
 import img7 from "./../../images/image014.jpg";
 
-const Gallary = () => {
+const Gallery = () => {
   return (
-    <GallaryContainer>
-        <GallaryHeader>Gallery</GallaryHeader>
-      <GallaryRows>
-        <GallaryFirstRow>
-          <GallatyImgContainer data-aos="flip-right">
-            <GallaryImg src={img1} />
-          </GallatyImgContainer>
-          <GallatyImgContainer data-aos="flip-right">
-            <GallaryImg src={img2} />
-          </GallatyImgContainer>
-          <GallatyImgContainer data-aos="flip-right">
-            <GallaryImg src={img3} />
-          </GallatyImgContainer>
-         
-        </GallaryFirstRow>
-
-        <GallaryFirstRow>
-          <GallatyImgContainer data-aos="flip-right">
-            <GallaryImg src={img5} />
-          </GallatyImgContainer>
-          <GallatyImgContainer data-aos="flip-right">
-            <GallaryImg src={img6} />
-          </GallatyImgContainer>
-          <GallatyImgContainer data-aos="flip-right">
-            <GallaryImg src={img7} />
-          </GallatyImgContainer>
-          
-        </GallaryFirstRow>
-      </GallaryRows>
-    </GallaryContainer>
-  );
-};
-
-export default Gallary;
+    <Container>
+      {/* <Header>Gallery</Header> */}
+        <Row>
+        <Column>
+          <Image src = {img1}/>
+          <Image src = {img2}/>
+          <Image src = {img3}/>
+        </Column>
+        <Column>
+          <Image src = {img5}/>
+          <Image src = {img7}/>
+          <Image src = {img6}/>
+        </Column>
+        <Column>
+          <Image src = {img6}/>
+          <Image src = {img5}/>
+          <Image src = {img7}/>
+        </Column>
+      </Row>
+    </Container> 
+   );
+}
+ 
+export default Gallery;

@@ -17,10 +17,3 @@ code {
   color: #fff;
   font-weight: bold;
 }
-#carousel{
-  padding-left : 4%
-}
-#carousel .owl-dots{
-  position: relative;
-  left: -4%;
-}

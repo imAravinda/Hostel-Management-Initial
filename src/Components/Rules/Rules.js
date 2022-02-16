@@ -1,48 +1,55 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
-  StructureItems,
-  StructureDes,
-  StructureImgContainer,
-  StructureDesPara,
-  StructureDesVisionDes,
-  StructureDesMissionDes,
-  StructureRule,
+  Container,
+  Header,
+  Button,
+  RulesSection,
+  RulesDescription,
+  Rule,
 } from "./RulesElements";
 
 
-const Structure = () => {
+const Rules = () => {
+  const ScrollToTop = ()=>{
+    if(window.pageYOffset > 200){
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+}
   return (
-    <StructureItems>
-      <StructureRule data-aos="fade-up">
-        Rules & Regulations
-      </StructureRule>
-      <StructureDes>
-        <StructureDesPara data-aos="fade-right">
+    <Container>
+      <RulesSection>
+        <Header >
+          Rules & Regulations
+        </Header>
+      </RulesSection>
+      <RulesSection>
+        <RulesDescription >
           The University of Ruhuna operates under the provisions of the
           Universities Act No. 16 of 1978 and the Universities (Amendment) Act
           No. 7 of 1985. Accordingly, the university has a Chancellor, a Vice
           Chancellor, Officers and Authorities to draw plans, make decisions,
           and monitor the implementation of such decisions in the overall
           management
-        </StructureDesPara>
-        <StructureDesVisionDes data-aos="fade-right">
+        </RulesDescription>
+        <Rule >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolore
           ad ipsam in fugiat odio reiciendis quod temporibus earum facere!
-        </StructureDesVisionDes>
-        <StructureDesMissionDes data-aos="fade-right">
+        </Rule>
+        <Rule >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
           molestiae magnam laboriosam aut officiis sed impedit excepturi
           voluptatum 
-        </StructureDesMissionDes>
-        <StructureImgContainer data-aos="zoom-in">
-          <button type="submit" className="submit">
-                 --See More--
-              </button>
-      </StructureImgContainer>
-      </StructureDes>
-      
-    </StructureItems>
+        </Rule>
+      </RulesSection>
+      <RulesSection>
+        <Button onClick={ScrollToTop}><Link to = "/RulesandRegulation" className="lin">See More</Link></Button>
+      </RulesSection>
+    </Container>
   );
 };
 
-export default Structure;
+export default Rules;

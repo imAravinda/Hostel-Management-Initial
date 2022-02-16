@@ -15,7 +15,7 @@ const AcademicWardens = () => {
 
     `
     const Slider=styled.div`
-        height: 400px;
+        height: 450px;
         width: 300px;
         z-index:0;
         border-radius: 10px;
@@ -40,7 +40,7 @@ const AcademicWardens = () => {
         border-bottom: 3px solid #49483E;
         display: inline;
     `
-    const H3 = styled.h3`
+    const H4 = styled.h4`
         color: #000;
         margin: 10px;
         text-align: left;
@@ -49,7 +49,6 @@ const AcademicWardens = () => {
         font-size: 15px;
         color: #000;
         text-align: left;
-        font-weight: 700;
         margin-left: 10px;
     `
     const Sec1 = styled.div`
@@ -83,7 +82,7 @@ const AcademicWardens = () => {
                     
                     <SubSec>
                         <div>
-                            <H3>Mr._ _ _ _ _ _ _ _ _ _ </H3>
+                            <H4>Dr. K. A. Sunanda. Kodikara-Arachchi</H4>
                             <P>Contact No   : </P>
                             <P>Email        :</P>
                         </div>
@@ -110,7 +109,7 @@ const AcademicWardens = () => {
                     
                     <SubSec>
                         <div>
-                            <H3>Mrs._ _ _ _ _ _ _ _ _ _</H3>
+                            <H4>Dr. W. S. Hemalika</H4>
                             <P>Contact No   : </P>
                             <P>Email        :</P>
                         </div>
