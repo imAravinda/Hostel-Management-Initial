@@ -9,6 +9,7 @@ import Aos from "aos";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import RulesandRegulation from './Pages/RulesandRegulation';
+import WardensandSubWardens from './Pages/WardensandSubWardens';
 function App() {
   useEffect(() => {
     Aos.init({duration:1000}); 
@@ -28,6 +29,11 @@ function App() {
             <Route exact path="/RulesandRegulation">
               <div>
                 <RulesandRegulation Covertext={content[1]} CoverImage={images[1]}/>
+              </div>
+            </Route>
+            <Route exact path="/WardensandSubWardens">
+              <div>
+                <WardensandSubWardens Covertext={content[2]} CoverImage={images[2]}/>
               </div>
             </Route>
           </Switch>

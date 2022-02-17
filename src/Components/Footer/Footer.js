@@ -71,7 +71,7 @@ const Footer = () => {
         </FooterSection>
       </SubSection>
       <FooterSection>
-        <p>2021 Department of Computer Science. | All Rights Reserved. </p>
+        <p>@{new Date().getFullYear()} Department of Computer Science. | All Rights Reserved. </p>
       </FooterSection>
     </FooterContainer>
   );

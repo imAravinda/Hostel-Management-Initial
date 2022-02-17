@@ -43,7 +43,7 @@ const Navbar = () => {
                             <Li className="li" onClick={() => {scrollToTop();Invisible();}}><Link to="">Facilities<Span className="Ho"></Span></Link></Li>
                             <Li className="li" onClick={() => {scrollToTop();Invisible();}}><Link to ="/RulesandRegulation">Rules & Regulations<Span className="Ho"></Span></Link></Li>
                             <Li className="li" onClick={() => {scrollToTop();Invisible();}}><Link to="">Maintaince<Span className="Ho"></Span></Link></Li>
-                            <Li className="li" onClick={() => {scrollToTop();Invisible()}}><Link to="">Wardens & SubWardens<Span className="Ho"></Span></Link></Li>
+                            <Li className="li" onClick={() => {scrollToTop();Invisible()}}><Link to="/WardensandSubWardens">Wardens & SubWardens<Span className="Ho"></Span></Link></Li>
                         </Ul>
                 </Nav> 
                 : false

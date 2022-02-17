@@ -12,7 +12,7 @@ const Home = (props) => {
     return (
         <div className="container">
          <Cover Cover1text= {props.Covertext} CoverImage1 = {props.CoverImage}/>
-         <LoginButton/>
+         <LoginButton />
          <Facilities />
          <Rules/>
          <Gallery />
