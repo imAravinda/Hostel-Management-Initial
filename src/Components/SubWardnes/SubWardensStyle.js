@@ -81,21 +81,6 @@ export const ContactInfo = styled.div`
 export const Text = styled.div`
     margin: 0;
 `
-// export const Sec1 = styled.div`
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//     `
-// export const Icon = styled.div`
-//         &{
-//         font-size: 20px;
-//         padding: 0 10px;
-//         cursor: pointer;
-//         }
-//         &:active{
-//             transform: scale(0.8);
-//         }
-//     `
 export const SubSec = styled.div`
         margin: 0;
     `
